@@ -23,17 +23,7 @@ DROP DATABASE IF EXISTS DataWarehouse;
 CREATE DATABASE DataWarehouse;
 
 use DataWarehouse;
-CREATE TABLE bronze (
-    id INT PRIMARY KEY,
-    data VARCHAR(100)
-);
 
-CREATE TABLE silver (
-    id INT PRIMARY KEY,
-    data VARCHAR(100)
-);
-
-CREATE TABLE gold (
-    id INT PRIMARY KEY,
-    data VARCHAR(100)
-);
+CREATE SCHEMA bronze;
+CREATE SCHEMA silver;
+CREATE SCHEMA gold;
