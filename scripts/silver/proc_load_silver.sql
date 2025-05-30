@@ -22,7 +22,7 @@ How to Run:
 
 
 
-CALL load_silver ();
+-- CALL load_silver ();
 
 DELIMITER $$
 
