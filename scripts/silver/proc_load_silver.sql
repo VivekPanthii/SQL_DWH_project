@@ -22,8 +22,12 @@ How to Run:
 
 
 
+CALL load_silver ();
+
 DELIMITER $$
+
 DROP PROCEDURE IF EXISTS load_silver $$
+
 CREATE PROCEDURE load_silver()
     BEGIN
     DECLARE start_time DATETIME;
@@ -270,4 +274,5 @@ SELECT CONCAT('   - Total Load Duration: ', TIMESTAMPDIFF(SECOND, batch_start_ti
 SELECT '==========================================' AS msg;
 
 END $$
+
 DELIMITER;
